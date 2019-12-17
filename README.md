@@ -3,11 +3,7 @@
 
 Development Environment wrangler for serverless microservices with AWS &amp; Bitbucket pipelines
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/@relativelimited/envy.svg)](https://npmjs.org/package/@relativelimited/envy)
-[![CircleCI](https://circleci.com/gh/relativelimited/envy/tree/master.svg?style=shield)](https://circleci.com/gh/relativelimited/envy/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/relativelimited/envy?branch=master&svg=true)](https://ci.appveyor.com/project/relativelimited/envy/branch/master)
-[![Codecov](https://codecov.io/gh/relativelimited/envy/branch/master/graph/badge.svg)](https://codecov.io/gh/relativelimited/envy)
 [![Downloads/week](https://img.shields.io/npm/dw/@relativelimited/envy.svg)](https://npmjs.org/package/@relativelimited/envy)
 [![License](https://img.shields.io/npm/l/@relativelimited/envy.svg)](https://github.com/relativelimited/envy/blob/master/package.json)
 
@@ -31,13 +27,29 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`envy configure [FILE]`](#envy-configure-file)
 * [`envy deploy [FILE]`](#envy-deploy-file)
-* [`envy hello [FILE]`](#envy-hello-file)
 * [`envy help [COMMAND]`](#envy-help-command)
+
+## `envy configure [FILE]`
+
+configure the required environment variables
+
+```
+USAGE
+  $ envy configure [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/configure.ts](https://github.com/relativelimited/envy/blob/v0.1.0/src/commands/configure.ts)_
 
 ## `envy deploy [FILE]`
 
-describe the command here
+Deploys a development environment from scratch
 
 ```
 USAGE
@@ -46,30 +58,10 @@ USAGE
 OPTIONS
   -f, --force
   -h, --help       show CLI help
-  -n, --name=name  name to print
+  -n, --name=name  name to give the environment
 ```
 
 _See code: [src/commands/deploy.ts](https://github.com/relativelimited/envy/blob/v0.1.0/src/commands/deploy.ts)_
-
-## `envy hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ envy hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ envy hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/relativelimited/envy/blob/v0.1.0/src/commands/hello.ts)_
 
 ## `envy help [COMMAND]`
 

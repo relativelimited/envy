@@ -1,0 +1,18 @@
+name: envy-example
+environment:
+  - name: ENV_LABEL
+    value: example
+  - name: BITBUCKET_BUILD_NUMBER
+    value: 999
+  - name: AWS_ACCESS_KEY_ID
+  - name: AWS_SECRET_ACCESS_KEY
+  - name: AWS_REGION
+    value: eu-west-1
+  - name: AWS_DEFAULT_REGION
+    value: eu-west-1
+repositories:
+  - name: envy-example
+    url: ssh://git@bitbucket.org/relativetech/envy-example.git
+    environment:
+      - name: MAIL_RECIPIENT
+        value: nick.cousins@relative.uk.com
