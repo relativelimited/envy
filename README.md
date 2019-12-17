@@ -22,7 +22,7 @@ $ npm install -g @relativelimited/envy
 $ envy COMMAND
 running command...
 $ envy (-v|--version|version)
-@relativelimited/envy/0.1.0 darwin-x64 node-v12.13.1
+@relativelimited/envy/0.1.0 darwin-x64 node-v8.10.0
 $ envy --help [COMMAND]
 USAGE
   $ envy COMMAND
@@ -31,8 +31,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`envy deploy [FILE]`](#envy-deploy-file)
 * [`envy hello [FILE]`](#envy-hello-file)
 * [`envy help [COMMAND]`](#envy-help-command)
+
+## `envy deploy [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ envy deploy [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/deploy.ts](https://github.com/relativelimited/envy/blob/v0.1.0/src/commands/deploy.ts)_
 
 ## `envy hello [FILE]`
 
